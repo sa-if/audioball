@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sound Reactive Website</title>
+    <style>
+        #ball {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 150px; /* Increase the size of the ball */
+            height: 150px; /* Increase the size of the ball */
+            margin-left: -50px; /* Adjust the margin to center the larger ball */
+            background-color: red;
+            border-radius: 50%;
+            transition: bottom 0.5s;
+        }
+    </style>
+
+<style>
+    #ball {
+        /* ...existing styles... */
+        transition: bottom 0.5s, left 0.5s; /* Add transition for left property */
+    }
+</style>
+</head>
+<body>
+    <div id="ball"></div>
+    <script src="script.js"></script>
+</body>
+</html>
