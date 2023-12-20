@@ -20,7 +20,7 @@ navigator.mediaDevices.getUserMedia({ audio: true, video: false })
         // Update the graphical interface based on the frequency data
         // Change the position of the ball based on the volume of the sound
         var volume = frequencyData.reduce((a, b) => a + b) / frequencyData.length;
-        var scaledVolume = volume * 10; // Increase the scaling factor
+        var scaledVolume = volume * 50; // Increase the scaling factor
         var randomJump = Math.random() * volume; // Add a random factor based on the volume
         document.getElementById('ball').style.bottom = (scaledVolume + randomJump) + 'px';
         document.getElementById('ball').style.left = (50 + randomJump) + '%'; // Add random horizontal movement
